@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#009688), url('Barber_Shop_img/Barber_Shop_img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width:140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script';
+}
+
+.banner p{
+    font-size: 20x;
+    font-style: italic;
+}
+
+.banner-button{
+    margin: 50px auto 0;
+}
+
+.banner-button a{
+    width: 150px;
+    text-decoration: none;
+    display:inline-block;
+    margin: 0 10px;
+    padding:12px 0;
+    color: #fff;
+    border:0.5px solid #ffff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+.banner-button a span{
+    width:0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.3s;
+
+}
+.banner-button a:hover span{
+    width: 100%;
+}
+
+.banner-button a:hover{
+    color:#000;
+}
+#sideNav{
+    width:240px;
+    top:0; 
+    right:0;
+    position: fixed;
+    height: 100vh;
+    background: #009688;
+    z-index: 2;
+}
+nav ul li{
+    list-style: none;
+    margin:50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
