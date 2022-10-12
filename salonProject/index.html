@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    </head>
+        </head>
     <body>
         <section class="banner">
           <img src="Barber_Shop_img/Barber_Shop_img/logo.png" class="logo">
@@ -38,8 +38,20 @@
         <script>
             var menuButton=document.getElementById("menuButton")
             var menu=document.getElementById("menu")
-            var sideNav=document.getElementById("sidenav")
+            var sideNav=document.getElementById("sideNav")
+            sideNav.style.right="-240px";
+            menuButton.onclick= function(){
+                if(sideNav.style.right=="-240px"){
+                    sideNav.style.right="0";
+                    menu.src="Barber_Shop_img/Barber_Shop_img/close.png";
+                }
+                else{
+                    sideNav.style.right="-240px";
+                    menu.src="Barber_Shop_img/Barber_Shop_img/menu.png" ;
+                }
+            }
         </script>
+
 
     </body>
 </html>
